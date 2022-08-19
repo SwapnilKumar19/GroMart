@@ -1,0 +1,2 @@
+rootProject.name = "GroMart"
+include ':app'

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:background="#1bd000">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Order is on the way"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/mallanna"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Arriving before 11 AM"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/mallanna"
+            android:layout_marginTop="-10dp"
+            />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Items in this order: "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/mallanna"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"/>
+        <View
+            android:layout_width="250dp"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/sapien"/>
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need help with your order?"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mallanna"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_toEndOf="@+id/img"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GroMart support is here to help"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mallanna"
+                android:layout_toEndOf="@+id/img"
+                android:layout_below="@id/txt1"
+                android:textSize="14sp"
+                android:layout_marginTop="-10dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="250dp"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:drawableStart="@drawable/ic_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat with us"
+                android:textColor="#1bd000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/mallanna"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"/>
+        <View
+            android:layout_width="250dp"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+            <TextView
+                android:drawableStart="@drawable/ic_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get a Call from us"
+                android:textColor="#1bd000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/mallanna"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
